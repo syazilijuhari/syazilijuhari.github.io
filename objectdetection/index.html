@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Object Detection</title>
+        <meta charset="utf-8">
+        <meta http-equip="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="https://png.pngtree.com/png-vector/20190307/ourlarge/pngtree-webcam-icon-design-template-vector-isolated-png-image_779652.jpg" type="image/x-icon">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <h1 class="title anim">Object Detection</h1>
+        
+        <!-- <p>Created By Syazili</p> -->
+
+        <section id="cam" class="invisible">
+
+            <p>Hold the object close up to your webcam. Click "Enable Webcam" if you're ready!</p>
+
+            <div id="liveView" class="viewCam">
+                <button id="webcamButton" class="raise">Enable Webcam</button>
+                <video id="webcam" autoplay width="700" height="500"></video>
+            </div>
+        </section>
+
+        <!-- import Tensor.js library -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+        <!-- load the coco-ssd model to use to recognize things in images -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+        <script src="main.js" defer></script>
+    </body>
+</html>
